@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unnati Prashant Bansod Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="http://kit.fontawesome.com/c425e24a8.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="name_logo.png" alt="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text"></div>
+        <p></p>
+        <h1>Hi , I'm <span>Unnati</span><br>Bansod</h1>
+
+        <!-- about -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="" alt="">
+                    </div>
+                        <div class="about-col-2">
+                            <h3 class="subtitle">About Me</h3>
+                            <p>I am currently persuing my Master's in Industrial Mathematics with Computer Applications from Fergusson College , Pune .
+                                I am a quick learner and a team player . I am always open to new opportunities and challanges . 
+                            </p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Key-Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                    <li>JQuery</li>
+                                    <li>SQL</li>
+                                    <li>Java</li>
+                                    <li>Basic C</li>
+                                    <li>Data Structure and Algorithm</li>
+                                    <li>Basic PHP , Figma </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li>Complete 2nd Year in IMCA in Fergusson College - 2022 - 2025 ( Complete 1st year with CGPA :  , 3rd semester with CGPA : 6.60)</li>
+                                    <li>B.Sc (Physics,Chemistry,Mathematics) - 2019-2022 Shree Shivaji Science College of Amravati with CGPA : 9.0 </li>
+                                    <li>HSC (PCMB group) - 2017-2019 SYK Junior Science College Akola with 77.87% </li>
+                                    <li>SSC - Mangilalji Sharma Vidyalaya Akola 2017 with 89% </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- project  -->
+<div id="portfolio">
+    <div class="container">
+        <h3 class="subtitle">My Work / Projects </h3>
+        <div class="work-list">
+            <div class="work">
+                <img src="project-1.jpg" alt="">
+                <div class="layer">
+                    <h3>Online Food Ordering System </h3>
+                    <p> The frontend provides user-friendly navigation, while the backend manages order processing, inventory, and
+                        customer data.</p>
+                        <p><b>Key-Skills : </b>HTML , CSS , JavaScript , Bootstrap , PHP , XAMPP , API , MySQL </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="project-2.jpeg" alt="">
+                <div class="layer">
+                    <h3> ChatBot</h3>
+                    <p> I am trying to add this chatbot in food ordering system app in help section .</p>
+                        <p><b>Key-Skills : </b>HTML , CSS , JavaScript , API , MySQL </p>
+                        <a href="#"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="project-3.jpg" alt="">
+                <div class="layer">
+                    <h3>Online Banking System in C Programming </h3>
+                    <p> Developed an Online Banking System using C programming language. • Implemented features include user authentication,
+                        account management, fund transfers, and transaction historytracking. 
+                         </p>
+                        <p><b>Tool : </b> Visual Studio Code</p>
+                        <a href="#" class="fa-solid fa-arrow-up-right-from-square"</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="Unnati_Bansod..pdf" class="btn">Resume</a>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me </h1>
+                <p><b><i class="fa fa-envelope"></i> : </b>unnatibansod3201@gmail.com</p>
+                <p><b><i class="fa fa-phone"></i> : </b>+91-7721913728</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/unniee" class="fa fa-instagram"></a>
+                    <a href="http://linkedin.com/in/unnati-bansod-5b2236297" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button class="btn btn2" type="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Unnati . Made by <i class="fa fa-heart"></i> Unnati Prashant Bansod</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwSgaKCfqrX0AHUF_kpHwLzy5FEXWTtqajhYECIOkF68nSSbn9sw9no60Sxo3460DNn/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully "
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
